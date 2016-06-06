@@ -265,7 +265,7 @@ static int sm_btl_first_time_init(mca_btl_sm_t *sm_btl, int n)
      * data structure.  This will reside in shared memory */
 
     /* set file name */
-    if(asprintf(&sm_ctl_file, "%s"OPAL_PATH_SEP"shared_mem_btl_module.%s",
+    if(asprintf(&sm_ctl_file, "%s" OPAL_PATH_SEP "shared_mem_btl_module.%s",
                 orte_process_info.job_session_dir,
                 orte_process_info.nodename) < 0)
         return OMPI_ERR_OUT_OF_RESOURCE;
